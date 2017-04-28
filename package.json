@@ -2,7 +2,7 @@
   "name": "openserver",
   "version": "1.0.0",
   "description": "到处运行的静态服务",
-  "main": "index.js",
+  "main": "./bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,8 @@
     "type": "git",
     "url": "git://github.com/Liqihan/openserver.git"
   },
+    "bin": "./bin/index.js",
+
   "author": "grove.liqihan",
   "homepage": "https://github.com/Liqihan/openserver",
   "license": "ISC",
