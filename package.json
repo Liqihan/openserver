@@ -1,0 +1,18 @@
+{
+  "name": "openserver",
+  "version": "1.0.0",
+  "description": "到处运行的静态服务",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "静态服务",
+    "Static",
+    "file",
+    "server",
+    "Assets"
+  ],
+  "author": "grove.liqihan",
+  "license": "ISC"
+}
