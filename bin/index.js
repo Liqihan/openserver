@@ -14,7 +14,7 @@ var serveStatic = require('serve-static');
 var serveIndex = require('serve-index');
 var fallback = require('connect-history-api-fallback');
 
-var _ = require('lodash');
+var _isNull = require('lodash/isNull');
 var debug = require('debug');
 debug.enable('openserver');
 var log = debug('openserver');
@@ -43,7 +43,7 @@ parser.addArgument(['-host', '--hostname'], {
 })
 
 var argument = parser.parseArgs();
-if (!_.isNull(argument.dir)) {
+if (!_isNull(argument.dir)) {
     var stat = fs.statSync(argument.dir);
     if (!stat.isDirectory()) {
         log(util.format('config dir %s not exist', argument.dir));
