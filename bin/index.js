@@ -44,13 +44,11 @@ parser.addArgument(['-host', '--hostname'], {
 
 var argument = parser.parseArgs();
 if (!_.isNull(argument.dir)) {
-    var realPath = path.join(__dirname, argument.dir);
-    var stat = fs.statSync(realPath);
+    var stat = fs.statSync(argument.dir);
     if (!stat.isDirectory()) {
         log(util.format('config dir %s not exist', argument.dir));
         process.exit(1)
     }
-    argument.dir = realPath;
 } else {
     argument.dir = process.cwd();
 }
