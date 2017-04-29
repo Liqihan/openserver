@@ -17,9 +17,7 @@
     "type": "git",
     "url": "git://github.com/Liqihan/openserver.git"
   },
-    "bin": {
-      "openserver": "./bin/index.js"
-    },
+  
 
   "author": "grove.liqihan",
   "homepage": "https://github.com/Liqihan/openserver",
