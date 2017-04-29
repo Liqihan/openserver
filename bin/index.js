@@ -43,7 +43,7 @@ parser.addArgument(['-host', '--hostname'], {
 })
 
 var argument = parser.parseArgs();
-if (!_isNull(argument.dir)) {
+if (_isNull(argument.dir)) {
     var stat = fs.statSync(argument.dir);
     if (!stat.isDirectory()) {
         log(util.format('config dir %s not exist', argument.dir));
