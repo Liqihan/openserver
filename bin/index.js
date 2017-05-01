@@ -12,7 +12,6 @@ var util = require('util');
 var connect = require('connect');
 var serveStatic = require('serve-static');
 var serveIndex = require('serve-index');
-// var fallback = require('connect-history-api-fallback');
 
 var _isNull = require('lodash/isNull');
 var debug = require('debug');
